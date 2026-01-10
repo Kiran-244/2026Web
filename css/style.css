@@ -436,3 +436,112 @@ body {
 .edu-points {
   transition-delay: 0.15s;
 }
+/* =====================================
+   RESEARCH — SERVICE STYLE SECTION
+   ===================================== */
+
+/* =========================
+   ACADEMIC WORK SECTION
+   ========================= */
+
+.research-services {
+  background: var(--bg-left);
+  padding: 6rem 4rem;
+  text-align: center;
+}
+
+/* TITLE */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--pink-accent);
+  margin: 0.8rem auto 0;
+}
+
+/* GRID */
+.research-card-grid {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+/* CARD */
+.research-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 4rem 2rem 3rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+  z-index: 1;
+}
+
+/* SOFT BASE SHADOW */
+.research-card-shadow {
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 78%;
+  height: 42px;
+  background: rgba(0, 0, 0, 0.06);
+  filter: blur(18px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* ICON BADGE */
+.research-icon {
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 64px;
+  background: var(--pink-accent);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+/* TEXT */
+.research-card h3 {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.4rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.research-card p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.8rem;
+}
+
+/* BUTTON */
+.research-btn {
+  display: inline-block;
+  padding: 0.55rem 1.4rem;
+  border: 1px solid var(--pink-accent);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pink-accent);
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.research-btn:hover {
+  background: var(--pink-accent);
+  color: #fff;
+}
