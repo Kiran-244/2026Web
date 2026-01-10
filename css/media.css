@@ -1,0 +1,338 @@
+/* ======================================
+   GLOBAL MOBILE RESET
+   ====================================== */
+@media (max-width: 1024px) {
+
+  /* Prevent horizontal scroll */
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Disable custom cursor on touch */
+  body {
+    cursor: auto;
+  }
+  .cursor {
+    display: none;
+  }
+
+  /* ======================================
+     HEADER
+     ====================================== */
+  .site-header {
+    padding: 1rem 0;
+  }
+
+  .site-logo {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+  }
+/* =====================================
+   HERO — MOBILE FIX (FINAL)
+   ===================================== */
+
+  /* FULL RESET OF SPLIT SYSTEM */
+  .split {
+    display: block !important;
+    width: 100%;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  /* REMOVE DIVIDER COMPLETELY */
+  .split-divider {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* LEFT HERO */
+  .split-left {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 2.5rem 1.5rem !important;
+    text-align: center;
+    align-items: center;
+    background: var(--bg-left);
+  }
+
+  .split-left h1 {
+    font-size: 2.2rem;
+    line-height: 1.15;
+    letter-spacing: 0.1em;
+    word-break: break-word;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    margin-top: 0.8rem;
+  }
+
+  .socials {
+    justify-content: center;
+    margin-top: 1.2rem;
+  }
+
+  /* RIGHT HERO (IMAGE) */
+  .split-right {
+    width: 100% !important;
+    padding: 2rem 0 1rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    margin-bottom:0px;
+  }
+
+  .photo-holder {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  /* ======================================
+     ABOUT SECTION
+     ====================================== */
+
+  .about-image-led {
+    padding: 4rem 1.8rem;
+  }
+
+  .about-image-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+    letter-spacing: 0.18em;
+  }
+
+  .about-title::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 100%;
+  }
+
+  .about-icons {
+    justify-content: center;
+  }
+
+  .about-image img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+/* =========================
+   ABOUT ME — MOBILE ONLY
+   ========================= */
+@media (max-width: 768px) {
+
+  .about-title {
+    text-align: center;
+    margin-top: 0rem;     /* reduces space from above */
+    margin-bottom: 2rem;    /* keeps breathing room below */
+  }
+
+  .about-title::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ======================================
+   SMALL MOBILE (PHONES)
+   ====================================== */
+@media (max-width: 480px) {
+
+  .split-left h1 {
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+  }
+
+  .photo-holder {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-title {
+    font-size: 1.9rem;
+  }
+
+  .about-info p {
+    font-size: 1.05rem;
+  }
+}
+/* =====================================
+   EDUCATION & EXPERIENCE — MOBILE
+   ===================================== */
+@media (max-width: 768px) {
+
+  /* SECTION WRAPPER */
+  .edu-exp {
+    padding: 4rem 1.6rem;
+  }
+
+  /* SECTION TITLE */
+  .edu-exp .section-title {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.18em;
+    margin: 0 0 2.5rem;
+  }
+
+  .edu-exp .section-title::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* CARD LIST */
+  .edu-exp-list {
+    gap: 2rem;
+  }
+
+  /* CARD */
+  .edu-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.8rem;
+    gap: 1.4rem;
+  }
+
+  /* IMAGE — CENTERED & WIDE */
+  .edu-card-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .edu-card-img img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* CONTENT */
+  .edu-card-content {
+    text-align: center;
+    width: 100%;
+  }
+
+  .edu-meta {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 0.5rem;
+  }
+
+  .edu-card-content h3 {
+    font-size: 1.2rem;
+    line-height: 1.35;
+    margin-bottom: 0.4rem;
+  }
+
+  .edu-sub {
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+
+  .edu-year {
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 0.2rem;
+  }
+
+  /* BULLET POINTS */
+  .edu-points {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    text-align: left;
+  }
+
+  .edu-points li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+  }
+}
+
+/* =====================================
+   SMALL PHONES (EXTRA POLISH)
+   ===================================== */
+@media (max-width: 480px) {
+
+  .edu-exp {
+    padding: 3.5rem 1.3rem;
+  }
+
+  .edu-exp .section-title {
+    font-size: 1.7rem;
+    letter-spacing: 0.15em;
+  }
+
+  .edu-card {
+    padding: 1.5rem;
+  }
+
+  .edu-card-img img {
+    max-width: 120px;
+  }
+
+  .edu-card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .edu-sub {
+    font-size: 1.05rem;
+  }
+
+  .edu-points li {
+    font-size: 1rem;
+  }
+}
+/* SOFT LIFT ON HOVER (DESKTOP ONLY) */
+@media (hover: hover) {
+  .edu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* IMAGE MICRO-FLOAT */
+.edu-card-img img {
+  transition:
+    transform 0.8s ease,
+    opacity 0.8s ease;
+}
+
+/* Image responds subtly when card lifts */
+@media (hover: hover) {
+  .edu-card:hover .edu-card-img img {
+    transform: translateY(-4px) scale(1.02);
+  }
+}
+
+/* CONTENT FADE-UP MICRO MOTION */
+.edu-card-content > * {
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease;
+}
+
+/* Gentle content nudge on hover */
+@media (hover: hover) {
+  .edu-card:hover .edu-card-content > * {
+    transform: translateY(-2px);
+  }
+}
+
